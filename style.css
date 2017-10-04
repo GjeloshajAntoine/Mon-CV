@@ -1,9 +1,17 @@
 .cv{
   margin:auto;
-  display: table;
+  display:table;
+  display:grid;
 }
-.photo img{
-  float: right;
+.left{
+    grid-column: 1 ; grid-row: 1;
+    background-color: rgb(0, 162, 255);
+}
+.right{
+  grid-column: 2 ; grid-row: 1;
+}
+.photo {
+  /*text-align: center;*/
 }
 .top .coord{
 
@@ -14,7 +22,6 @@
 
 
 .section{
-  display:grid;
   width: 750px;
 }
 .section .titre{
