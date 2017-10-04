@@ -1,0 +1,35 @@
+.cv{
+  margin:auto;
+  display: table;
+}
+.photo img{
+  float: right;
+}
+.top .coord{
+
+}
+.top .coord .truc {
+
+}
+
+
+.section{
+  display:grid;
+  width: 750px;
+}
+.section .titre{
+  grid-column: 1 ; grid-row: 1;
+  font-size: 30px;
+  text-decoration: solid;
+  text-decoration-line: underline;
+  color: #008cc5;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.gauche{
+   grid-column: 1; grid-row:2;
+   font-weight: bold;
+}
+.droite{
+   grid-column: 2; grid-row: 2;
+}
