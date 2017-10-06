@@ -1,17 +1,28 @@
 .cv{
   margin:auto;
   display:table;
-  display:grid;
+  display: grid;
+  /*width: 700px;*/
+  grid-gap: 1%;
+  grid-template-columns: 20% 69%;
 }
 .left{
     grid-column: 1 ; grid-row: 1;
-    background-color: rgb(0, 162, 255);
+    background-color: rgb(64, 164, 195);
+    text-align: center;
+    color: white;
+    min-height: 95vh;
 }
 .right{
   grid-column: 2 ; grid-row: 1;
+  display: grid;
 }
 .photo {
   /*text-align: center;*/
+  padding: 15px;
+}
+.photo img{
+  border-radius: 50%;
 }
 .top .coord{
 
@@ -19,24 +30,87 @@
 .top .coord .truc {
 
 }
+.competence-grid{
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+.competence-nom{
+  grid-column: 1;
+  grid-row: auto;
+  text-align:end;
+  margin-right: 5%;
+}
+.competence-niveau{
+  grid-column: 2;
+  grid-row: auto;
+  text-align: initial;
+  margin-left:5%;
+}
 
+
+.titre-container{
+  grid-row: 1;/*1ere ligne*/
+  grid-column: 1;/*étends la 1ere columne juqu'à la 2éme*/
+  display: grid;
+  margin-bottom: 7%;
+}
+.titre-container div:nth-child(1){
+  grid-row: 1;
+  grid-column: 1;
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid black;
+}
+.titre-container div:nth-child(2){
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+  font-size: 40px;
+}
+.titre-container div:nth-child(3){
+  grid-row: 1;
+  grid-column: 3;
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid black;
+}
+.titre-container span{
+  grid-column: 1/span 3;
+  grid-row: 2;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 .section{
-  width: 750px;
+  /*width: 750px;*/
+  text-align: center;
+  display: grid;
+  grid-column: 1;
+  grid-template-columns: 30% 70%;/*taille spécifiée pour alginer les colones quand le contenu est diffétent*/
+  margin-bottom: 4%;
+}
+.section :nth-child(1){
+  grid-row: 1;
+}
+.section :nth-child(2){
+  grid-row: 2;
 }
 .section .titre{
-  grid-column: 1 ; grid-row: 1;
+  grid-column: 1 /span 2; grid-row: 1;
   font-size: 30px;
-  text-decoration: solid;
-  text-decoration-line: underline;
+  /*text-decoration: solid;
+  text-decoration-line: underline;*/
   color: #008cc5;
   font-weight: 900;
   margin-bottom: 10px;
+  border-bottom: 1px solid black;
 }
 .gauche{
-   grid-column: 1; grid-row:2;
+   grid-column: 1; grid-row:auto;
    font-weight: bold;
 }
 .droite{
-   grid-column: 2; grid-row: 2;
+   grid-column: 2; grid-row: auto;
+   padding-left: 29%;
+   padding-right: 21%;
 }
